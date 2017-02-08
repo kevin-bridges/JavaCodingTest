@@ -42,8 +42,10 @@ public class Main {
 		System.out.println("TreeSet contains: " + TSCombinedList.toString());
 		
 		//Remove Middle Element
-		//Removing 8 from the TreeSet now manually until I build the class for this later
-		System.out.println("Remove 8: "+TSCombinedList.remove(8)); 
+		//Removing Middle Element from the TreeSet
+		FindMiddleElement finder = new FindMiddleElement();
+		int removeItem = finder.Find(TSCombinedList);
+		System.out.println("Remove middle: "+TSCombinedList.remove(removeItem));
 		System.out.println("TreeSet contains: " + TSCombinedList.toString());
 		
 		//Print in descending order
